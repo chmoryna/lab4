@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -14,4 +14,4 @@ jobs:
       - name: Install dependencies
         run: pip install pytest
       - name: Run tests
-        run: pytest
+        run: pytest test_main.py
