@@ -14,4 +14,4 @@ jobs:
       - name: Install dependencies
         run: pip install pytest
       - name: Run tests
-        run: pytest --maxfail=1 --disable-warnings -
+        run: pytest --maxfail=1 --disable-warnings -q
